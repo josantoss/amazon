@@ -1,4 +1,3 @@
-import React from 'react'
 import classes from './Carousel.module.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { images } from'./images/data.js';
@@ -14,7 +13,7 @@ const myCarousel = () => {
                 showThumbs={false}
                 showArrows={true}
             >
-                {images.map((imageItem) => { return <img src={imageItem} alt='Images' /> })}
+            {images.map((imageItem) =>{ return <img src={imageItem} alt='Images' /> })}
             </Carousel>
             <div className={classes.color_fade}></div>
 
