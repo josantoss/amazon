@@ -1,15 +1,15 @@
-import React from "react";
+// import React from "react";
 // Corrected to default import
-import { CategoryInfos} from "./CategoryInfo.js";
-import CategoryCard from "./CatagoryCard"; 
-import classes from './Catagory.module.css'
+import { CategoryInfos } from "./CategoryInfo.js";
+import CategoryCard from "./CatagoryCard";
+import classes from "./Catagory.module.css";
 
 const Category = () => {
   return (
     <div>
-      <section className= {classes.Category_container}>
+      <section className={classes.Category_container}>
         {CategoryInfos.map((item) => (
-          <CategoryCard data={item} />
+          <CategoryCard data={item} key={item.id} />
         ))}
       </section>
     </div>
